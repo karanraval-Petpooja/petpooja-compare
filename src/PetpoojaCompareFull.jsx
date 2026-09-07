@@ -1210,10 +1210,14 @@ function LoggedInBar({ user, logout, onAdmin }) {
   </div>;
 }
 export default function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(() => {
+    try { return JSON.parse(localStorage.getItem("pc_user") || "null"); } catch { return null; }
+  });
   const [view, setView] = useState("dashboard");
   const isAdmin = user && (user.role === "admin" || user.role === "superadmin");
-  if (!user) return <Login onAuthed={(u) => { setUser(u); setView("dashboard"); }} />;
-  if (view === "admin" && isAdmin) return <Admin user={user} logout={() => setUser(null)} onBack={() => setView("dashboard")} />;
-  return <><LoggedInBar user={user} logout={() => setUser(null)} onAdmin={isAdmin ? () => setView("admin") : null} /><CompareApp /></>;
+  const login = (u) => { try { localStorage.setItem("pc_user", JSON.stringify(u)); } catch {} setUser(u); setView("dashboard"); };
+  const logout = () => { try { localStorage.removeItem("pc_user"); } catch {} setUser(null); };
+  if (!user) return <Login onAuthed={login} />;
+  if (view === "admin" && isAdmin) return <Admin user={user} logout={logout} onBack={() => setView("dashboard")} />;
+  return <><LoggedInBar user={user} logout={logout} onAdmin={isAdmin ? () => setView("admin") : null} /><CompareApp /></>;
 }
