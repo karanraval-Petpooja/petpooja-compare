@@ -41,7 +41,11 @@ const GROUPS = {
     { key: "inventory", title: "Inventory", rows: [["inventory", "Inventory Management"], ["stockTracking", "Stock Tracking"], ["purchaseMgmt", "Purchase Management"], ["recipeMgmt", "Recipe Management"], ["wastage", "Wastage Tracking"]] },
     { key: "integrations", title: "Integrations", rows: [["swiggy", "Swiggy"], ["zomato", "Zomato"], ["paymentGateway", "Payment Gateway"], ["qrOrdering", "QR Ordering"], ["accounting", "Accounting"]] },
     { key: "reporting", title: "Reporting", rows: [["salesReports", "Sales Reports"], ["outletReports", "Outlet Reports"], ["inventoryReports", "Inventory Reports"], ["staffReports", "Staff Reports"]] },
+<<<<<<< HEAD
     { key: "plus", title: "Petpooja Plus (why we win)", rows: [["purchaseByPetpooja", "Purchase by Petpooja (FREE - snap image, auto inventory)"], ["captainApp", "Captain App"], ["kds", "Kitchen Display (KDS)"], ["waiterCall", "Waiter Calling Device"], ["trm", "Table Reservation Manager"], ["digitalDisplay", "Digital Display"], ["myWebsite", "My Website (own ordering)"], ["reconciliation", "Order Reconciliation"], ["virtualWallet", "Virtual Wallet"], ["purchaseManager", "Purchase Manager (price compare)"], ["wabaMarketing", "WABA Marketing & e-Bills"]] },
+=======
+    { key: "plus", title: "Petpooja Plus (why we win)", rows: [["captainApp", "Captain App"], ["kds", "Kitchen Display (KDS)"], ["waiterCall", "Waiter Calling Device"], ["trm", "Table Reservation Manager"], ["digitalDisplay", "Digital Display"], ["myWebsite", "My Website (own ordering)"], ["reconciliation", "Order Reconciliation"], ["virtualWallet", "Virtual Wallet"], ["purchaseManager", "Purchase Manager (price compare)"], ["wabaMarketing", "WABA Marketing & e-Bills"]] },
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
   ],
   marketing: [
     { key: "acquire", title: "Acquire New Customers", rows: [["influencerMeta", "Influencer + Meta"], ["meta", "Meta Ads"], ["snapchat", "Snapchat"], ["whatsappMkt", "WhatsApp"]] },
@@ -55,6 +59,7 @@ const GROUPS = {
     { key: "leave", title: "Leave", rows: [["leaveMgmt", "Leave Management"], ["leavePolicies", "Leave Policies"], ["leaveApproval", "Leave Approval"], ["leaveBalance", "Leave Balance"], ["leaveEncashment", "Leave Encashment"]] },
     { key: "compliance", title: "Compliance", rows: [["pf", "PF"], ["esic", "ESIC"], ["pt", "Professional Tax"], ["tds", "TDS"], ["form16", "Form 16"], ["statutoryReports", "Statutory Reports"]] },
     { key: "employee", title: "Employee", rows: [["ess", "Employee Self Service"], ["empApp", "Employee App"], ["regularization", "Regularization"], ["leaveRequests", "Leave Requests"], ["slipAccess", "Salary Slip Access"]] },
+<<<<<<< HEAD
     { key: "extras", title: "Petpooja Attendo extras (why we win)", rows: [["announcement", "Announcement broadcast"], ["bgVerification", "Background verification"], ["geoTracking", "Geo-tracking (live)"], ["mediclaimAddon", "Mediclaim add-on"]] },
   ],
   localpos: [
@@ -67,6 +72,14 @@ const GROUPS = {
     { key: "inventory", title: "Inventory & Operations", rows: [["productMgmt", "Product Management"], ["stock", "Stock & Inventory"], ["hoWarehouse", "HO / Warehouse"], ["multiUser", "Multi-User"], ["barcode", "Barcode"]] },
     { key: "payments", title: "Payments", rows: [["paymentTracking", "Payment Tracking"], ["reminders", "Payment Reminders"], ["onlinePayments", "Online Payments"], ["edc", "EDC / Card Machine"]] },
     { key: "loyalty", title: "Customers & Loyalty", rows: [["customerMgmt", "Customer Management"], ["customerHistory", "Customer History"], ["partyMetafield", "Party Metafield (custom fields)"], ["loyalty", "Loyalty & Rewards"]] },
+=======
+  ],
+  invoice: [
+    { key: "billing", title: "Billing", rows: [["invoiceCreation", "Invoice Creation"], ["gstInvoice", "GST Invoice"], ["eInvoice", "E-Invoice"], ["creditNote", "Credit / Debit Note"], ["recurringInvoice", "Recurring Invoice"], ["whatsappEbill", "WhatsApp E-Bill"]] },
+    { key: "inventory", title: "Inventory & Operations", rows: [["productMgmt", "Product Management"], ["stock", "Stock & Inventory"], ["hoWarehouse", "HO / Warehouse"], ["multiUser", "Multi-User"], ["barcode", "Barcode"]] },
+    { key: "payments", title: "Payments", rows: [["paymentTracking", "Payment Tracking"], ["reminders", "Payment Reminders"], ["onlinePayments", "Online Payments"], ["edc", "EDC / Card Machine"]] },
+    { key: "loyalty", title: "Customers & Loyalty", rows: [["customerMgmt", "Customer Management"], ["customerHistory", "Customer History"], ["loyalty", "Loyalty & Rewards"]] },
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
     { key: "integrations", title: "Integrations", rows: [["tallyIntg", "Tally Integration"], ["shopify", "Shopify"], ["websiteIntg", "Website Integration"]] },
     { key: "ai", title: "Advanced / AI", rows: [["purchaseAI", "Purchase AI"], ["autoPurchase", "Auto Purchase entry (Purchase by Petpooja)"], ["aiTryOn", "AI Try-On (clothing)"], ["aiTheft", "AI Theft Detection"], ["adsr", "ADSR"], ["aiInsights", "AI Insights"]] },
     { key: "reports", title: "Reports", rows: [["salesReports", "Sales Reports"], ["gstReports", "GST Reports"], ["outstandingReports", "Outstanding Reports"]] },
@@ -75,7 +88,10 @@ const GROUPS = {
 const HW_GROUPS = {
   pos: [["posTerminal", "POS Terminal"], ["printer", "Bill Printer"], ["kotPrinter", "KOT Printer"], ["barcodeScanner", "Barcode Scanner"], ["cashDrawer", "Cash Drawer"], ["customerDisplay", "Customer Display"], ["kitchenDisplay", "Kitchen Display (KDS)"], ["paymentDevice", "Payment Device"], ["installation", "Installation"]],
   attendo: [["biometricDevice", "Biometric Device"], ["fingerprint", "Fingerprint"], ["faceDevice", "Face Recognition"], ["rfid", "RFID"], ["nfc", "NFC"], ["offlinePunch", "Offline Punch"], ["realtimeSync", "Real-time Sync"], ["installation", "Installation"]],
+<<<<<<< HEAD
   localpos: [["posTerminal", "POS Terminal"], ["printer", "Bill Printer"], ["kotPrinter", "KOT Printer"], ["barcodeScanner", "Barcode Scanner"], ["cashDrawer", "Cash Drawer"], ["customerDisplay", "Customer Display"], ["kitchenDisplay", "Kitchen Display (KDS)"], ["paymentDevice", "Payment Device"], ["installation", "Installation"]],
+=======
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
 };
 const featureIds = (prod) => GROUPS[prod].flatMap((g) => g.rows.map((r) => r[0]));
 const fill = (prod, base, overrides = {}) => {
@@ -103,11 +119,19 @@ const attendoPetpooja = {
       { id: "plus-advance", name: "Attendo Plus Advance (+Task)", y1: 14000, y3: null, renewal: 7000, renewalLabel: "AMC / year", note: "Biometric + screen + Task." },
       { id: "face-advance", name: "Attendo Face Advance (+Task)", y1: 18000, y3: null, renewal: 7000, renewalLabel: "AMC / year", note: "Face device + Task." },
     ],
+<<<<<<< HEAD
     addon: "Add-ons (per employee, +18% GST): Geo tracking ₹1,000 (₹1,180)/yr · Mediclaim ₹1,300/yr · Background verification ₹200 (₹236) one-time. Announcement broadcast included free.",
   },
   features: fill("attendo", Y, { performanceMgmt: N }),
   hardware: { biometricDevice: Y, fingerprint: Y, faceDevice: Y, rfid: Y, nfc: Y, offlinePunch: Y, realtimeSync: Y, installation: Y, warranty: "Included" },
   advantages: ["Announcement broadcast + Background verification built in — competitors mostly don't offer these", "Geo-tracking add-on (₹1,000 + GST) — we run it, no manual field tracking", "Device included · no per-employee software fee", "Attendance + payroll + compliance in one; biometric, face, RFID & geo-fencing"],
+=======
+    addon: "Add-ons: Geo tracking ₹1,000 + GST / emp / yr · Mediclaim ₹1,300 + GST / emp / yr",
+  },
+  features: fill("attendo", Y, { performanceMgmt: N }),
+  hardware: { biometricDevice: Y, fingerprint: Y, faceDevice: Y, rfid: Y, nfc: Y, offlinePunch: Y, realtimeSync: Y, installation: Y, warranty: "Included" },
+  advantages: ["Device included in the plan", "Simple flat annual pricing — no per-employee fee", "Attendance + payroll in one", "Biometric, face, RFID & geo-fencing built in"],
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
   sources: [{ name: "Petpooja Attendo", url: "https://www.petpooja.com/", date: "Aug 2026" }],
 };
 const attendoComps = {
@@ -121,6 +145,7 @@ const attendoComps = {
 };
 
 /* ---------- POS ---------- */
+<<<<<<< HEAD
 const posDefault = fill("pos", Y, { purchaseByPetpooja: N, recipeMgmt: P, wastage: P, accounting: P, captainApp: P, kds: P, waiterCall: N, trm: P, digitalDisplay: N, myWebsite: P, reconciliation: N, virtualWallet: P, purchaseManager: N, wabaMarketing: P });
 const localposPetpooja = {
   pricing: {
@@ -148,6 +173,9 @@ const localposComps = {
   menson: localposComp("Menson POS", "Local / offline restaurant billing POS", "", { localData: P, offline5day: Y, merchantControl: P }),
 };
 
+=======
+const posDefault = fill("pos", Y, { recipeMgmt: P, wastage: P, accounting: P, captainApp: P, kds: P, waiterCall: N, trm: P, digitalDisplay: N, myWebsite: P, reconciliation: N, virtualWallet: P, purchaseManager: N, wabaMarketing: P });
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
 const posPetpooja = {
   pricing: {
     headline: "Operation Core ₹12,000 + Manager tiers", model: "Operation Core (base) + Operation Manager add-on tiers", billing: "Annual (Ex tax)", perUnit: "Unlimited users & terminals", hardware: "Available (terminal, printers, KDS)", setup: "Installation & training included", geo: "—",
@@ -161,7 +189,11 @@ const posPetpooja = {
   },
   features: fill("pos", Y),
   hardware: { posTerminal: Y, printer: Y, kotPrinter: Y, barcodeScanner: Y, cashDrawer: Y, customerDisplay: Y, kitchenDisplay: Y, paymentDevice: Y, installation: Y, warranty: "As per plan" },
+<<<<<<< HEAD
   advantages: ["Purchase by Petpooja — FREE: snap a bill image and inventory updates automatically, no manual entry", "Purchase Manager — raw-material price comparison, direct ordering & auto inventory", "End-to-end marketing — WABA, branded e-Bills, feedback, loyalty & campaigns in one flow", "KDS, Captain App, Scan & Order & Waiter Calling — full front-to-kitchen coordination", "Table Reservation Manager (Swiggy Dineout / Zomato / District), Digital Display, My Website & Order Reconciliation", "Core includes inventory, 90+ reports & AI Agent · unlimited users & terminals"],
+=======
+  advantages: ["Purchase Manager — raw-material price comparison, direct ordering & auto inventory (beyond basic inventory)", "End-to-end marketing — WABA, branded e-Bills, feedback, loyalty & campaigns in one flow", "KDS, Captain App, Scan & Order & Waiter Calling — full front-to-kitchen coordination", "Table Reservation Manager (Swiggy Dineout / Zomato / District), Digital Display, My Website & Order Reconciliation", "Core includes inventory, 90+ reports & AI Agent · unlimited users & terminals"],
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
   sources: [{ name: "Petpooja", url: "https://www.petpooja.com/", date: "Sep 2026" }],
 };
 const posComp = (name, tagline, headline, over = {}, hw = {}, extra = {}) => ({
@@ -178,7 +210,11 @@ const posComps = {
   tmbill: posComp("TMBill", "Cloud POS + add-ons", "₹10,000 yr1 · ₹8,000 renewal", { recipeMgmt: Y, purchaseMgmt: Y, captainApp: Y, kds: Y, trm: Y, virtualWallet: Y, myWebsite: Y, purchaseManager: P }, {}, { adv: ["Unlimited devices & users on Core", "Rich paid add-on marketplace", "Inventory, recipe & purchase in Core"], url: "https://www.tmbill.com/", custom: false, model: "Per outlet, annual + add-ons" }),
   ezo: posComp("EZO", "Billing, POS & inventory app", "From low monthly (verify)", { tableMgmt: P, kot: P, recipeMgmt: N, wastage: N }, {}, { adv: ["Simple billing & inventory app", "Low entry cost"], url: "https://ezo.io/" }),
   rista: posComp("Rista", "Cloud POS + CRM bundle", "₹15,000–₹35,000 + GST / yr", { wabaMarketing: Y, virtualWallet: P }, {}, { adv: ["Discounted POS + CRM + WhatsApp bundle", "QR & online ordering", "Loyalty & customer insights"], url: "https://www.ristaapps.com/", custom: false, model: "Per outlet, annual (12 mo)" }),
+<<<<<<< HEAD
   dineers: posComp("Dineers", "Restaurant POS & billing", "Not publicly listed", {}, {}, { adv: ["Restaurant billing & operations"], url: "" }),
+=======
+  dotpe: posComp("DotPe", "Ordering + POS", "Not publicly listed", { inventory: P, recipeMgmt: P, myWebsite: Y, wabaMarketing: P }, {}, { adv: ["QR ordering & digital storefront"], url: "https://dotpe.in/" }),
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
 };
 
 /* ---------- MARKETING AUTOMATION ---------- */
@@ -208,18 +244,26 @@ const mktComps = {
   xeno: mktComp("Xeno", "Restaurant CRM & marketing", { waba: Y, loyaltyPts: Y }, ["Restaurant-specific CRM depth"], "https://xeno.in/"),
   limetray: mktComp("LimeTray", "Engagement & loyalty suite", { loyaltyPts: Y }, ["Broader restaurant tech suite"], "https://limetray.com/"),
   wateron: mktComp("WATConsult / others", "Generic CRM & campaigns", { feedback: P, reputation: P }, ["General-purpose campaigns"], ""),
+<<<<<<< HEAD
   reelo: { name: "Reelo", tagline: "Restaurant loyalty & marketing", pricing: { headline: "Free · Growth ₹3,250/outlet/mo", model: "Per-outlet, free tier + paid", billing: "Annual", perUnit: "₹3,250/outlet/mo (Growth)", hardware: "—", setup: "Low", geo: "—", custom: false, calc: () => 3250 }, features: fill("marketing", Y, { snapchat: N, influencerMeta: N, digitalDisplay: N, trm: N, meta: P, waba: Y, loyaltyPts: Y, feedback: Y, reputation: Y }), hardware: {}, advantages: ["Deep restaurant loyalty & membership programs", "Integrates with 35+ POS incl. Petpooja", "WhatsApp / SMS / email in one place"], sources: [{ name: "Reelo", url: "https://reelo.io/pricing/", date: "Sep 2026" }] },
+=======
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
 };
 
 /* ---------- INVOICE (NPU) ---------- */
 const invPetpooja = {
   pricing: {
+<<<<<<< HEAD
     headline: "Basic ₹6,000 · Advance ₹12,000 / yr", model: "Flat plan (Basic / Advance) · no per-user", billing: "Annual (1-yr & 3-yr)", perUnit: "Per outlet", hardware: "—", setup: "Low", geo: "—",
+=======
+    headline: "Basic ₹6,000 · Advance ₹12,000 / yr", model: "Flat plan (Basic / Advance) · no per-user", billing: "Annual (1-yr & 3-yr)", perUnit: "None", hardware: "—", setup: "Low", geo: "—",
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
     note: "Effective 1 Sep 2026. Prices exclude GST.",
     plans: [
       { id: "basic", name: "Basic", def: true, y1: 6000, y3: 10000, renewal: 3500, renewalLabel: "Renewal / year", note: "All core POS & business features — Billing, Inventory, Reporting, HO/Warehouse, Multi-User, WhatsApp E-Bills." },
       { id: "advance", name: "Advance", badge: "Most features", y1: 12000, y3: 16000, renewal: 5000, renewalLabel: "Renewal / year", note: "Everything in Basic + Purchase by Petpooja (supplier invoices sync automatically — no manual entry), Purchase AI, Shopify, Tally, Loyalty, Website Integration, EDC, ADSR, AI Try-On (clothing), AI Theft Detection, WhatsApp Messaging & upcoming integrations." },
     ],
+<<<<<<< HEAD
     plansAfter: [
       { id: "basic", name: "Basic", def: true, y1: 6000, y3: 10000, renewal: 3500, renewalLabel: "Renewal / year", note: "Billing & POS, Multi-Counter / Multi-User, HO & Warehouse Management, Inventory, Reporting, Accounting features, Mobile B2C app, Weighing scale, Unlimited WhatsApp E-Bills via WABA. All core retail needs, no extra add-ons required." },
       { id: "advance", name: "Advance", badge: "Complete", y1: 12000, y3: 16000, renewal: 5000, renewalLabel: "Renewal / year", note: "Everything in Basic + Purchase AI, Shopify, WhatsApp Messaging, Petpooja Loyalty, Tally, AI Try-On, Merchant Website, EDC Payment, Static QR (upcoming), ADSR, AI Theft Detection, WhatsApp Order (upcoming)." },
@@ -231,6 +275,15 @@ const invPetpooja = {
   sources: [{ name: "Petpooja Invoice", url: "https://www.petpooja.com/invoice", date: "Sep 2026" }],
 };
 const invOver = (o = {}) => ({ purchaseAI: N, autoPurchase: N, aiTryOn: N, aiTheft: N, adsr: N, aiInsights: N, whatsappEbill: P, whatsappOrdering: N, partyMetafield: N, hoWarehouse: P, shopify: P, websiteIntg: P, loyalty: P, edc: P, tallyIntg: P, barcode: Y, ...o });
+=======
+  },
+  features: fill("invoice", Y),
+  hardware: {},
+  advantages: ["Purchase by Petpooja — supplier invoices update automatically, no manual entry", "AI Try-On (clothing) & AI Theft Detection — unique to Petpooja", "Flat pricing — no per-user / per-counter fees", "Advance adds Shopify, Tally, Loyalty, EDC, ADSR & Purchase AI"],
+  sources: [{ name: "Petpooja Invoice", url: "https://www.petpooja.com/invoice", date: "Sep 2026" }],
+};
+const invOver = (o = {}) => ({ purchaseAI: N, autoPurchase: N, aiTryOn: N, aiTheft: N, adsr: N, aiInsights: N, whatsappEbill: P, hoWarehouse: P, shopify: P, websiteIntg: P, loyalty: P, edc: P, tallyIntg: P, barcode: Y, ...o });
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
 const invC = (name, tagline, bestFor, headline, over, url, custom = true) => ({
   name, tagline, bestFor,
   pricing: { headline, model: custom ? "Custom / licence" : "Per-plan", billing: custom ? "Custom" : "Annual", perUnit: custom ? "Not publicly listed" : "Varies", hardware: "—", setup: "Varies", geo: "—", custom },
@@ -298,24 +351,35 @@ const INVOICE_INTEGRATIONS = {
     { name: "Pine Labs Android POS", desc: "Android POS on Pine Labs terminals — one device for billing & payments.", badge: "Newly Launched" },
     { name: "PhonePe Dynamic QR", desc: "Seamless UPI payments with automatic payment sync." },
   ],
+<<<<<<< HEAD
   marketing: [
     { name: "WhatsApp Marketing", desc: "Send offers and updates to customers on WhatsApp.", price: "₹2,500 + taxes / yr", badge: "Newly Launched" },
     { name: "Petpooja Loyalty", desc: "Reward customers with points, discounts and cashback.", price: "Free", badge: "Newly Launched" },
     { name: "BillFree Integration", desc: "Sync customer data with BillFree to automate loyalty earn & redeem.", price: "₹2,500 + taxes / yr", badge: "Coming Soon" },
     { name: "Reelo", desc: "Sync customer data with Reelo to automate loyalty earn & redeem.", price: "₹2,500 + taxes / yr" },
   ],
+=======
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
   extra: { name: "Tally Integration — 1 Year", desc: "Sync invoices & accounting with Tally.", price: "₹2,500 + taxes" },
 };
 
 /* ---------- PRODUCT REGISTRY ---------- */
 const PRODUCTS = {
   pos: { name: "POS", cat: ["ppu"], Icon: ShoppingCart, desc: "Complete restaurant POS, billing and operations management.", caps: ["Billing & KOT", "Inventory", "Aggregator integrations"], hardware: true, groups: "pos", petpooja: posPetpooja, comps: posComps, calcInputs: [["outlets", "Outlets", 1], ["terminals", "Terminals", 1]], perOutlet: true },
+<<<<<<< HEAD
   "local-pos": { name: "Local POS", cat: ["ppu"], Icon: Store, desc: "Local-first POS - all data on your own Bridge Server, offline up to 5 days.", caps: ["Local-first / on-prem", "Offline up to 5 days", "Merchant-owned data"], hardware: true, groups: "localpos", petpooja: localposPetpooja, comps: localposComps, calcInputs: [["outlets", "Outlets", 1]], perOutlet: true },
   marketing: { name: "Marketing Automation", cat: ["ppu"], Icon: Megaphone, desc: "Engage customers, automate marketing and drive repeat business.", caps: ["WhatsApp & SMS", "Loyalty", "Automation"], hardware: false, groups: "marketing", petpooja: mktPetpooja, comps: mktComps, calcInputs: [["outlets", "Outlets", 1]], perOutlet: true },
   attendo: { name: "Attendo", cat: ["ppu", "npu"], Icon: Users, desc: "Attendance, payroll and workforce management.", caps: ["Payroll", "Biometric attendance", "Compliance"], hardware: true, groups: "attendo", petpooja: attendoPetpooja, comps: attendoComps, calcInputs: [["employees", "Employees", 50]], perUnitCalc: "employees", addons: [{ id: "geo", label: "Geo tracking", per: "year", amt: 1000 }, { id: "mediclaim", label: "Mediclaim", per: "year", amt: 1300 }, { id: "bgv", label: "Background verification", per: "once", amt: 200 }] },
   invoice: { name: "Invoice", cat: ["npu"], Icon: FileText, desc: "Simple invoicing and GST billing for growing businesses.", caps: ["GST invoice", "E-invoice", "Payments"], hardware: false, groups: "invoice", petpooja: invPetpooja, comps: invComps, calcInputs: [["outlets", "Outlets", 1]], perOutlet: true, integrations: INVOICE_INTEGRATIONS },
 };
 const CATS = { ppu: ["pos", "local-pos", "marketing", "attendo"], npu: ["invoice", "attendo"] };
+=======
+  marketing: { name: "Marketing Automation", cat: ["ppu"], Icon: Megaphone, desc: "Engage customers, automate marketing and drive repeat business.", caps: ["WhatsApp & SMS", "Loyalty", "Automation"], hardware: false, groups: "marketing", petpooja: mktPetpooja, comps: mktComps, calcInputs: [["customers", "Customers (000s)", 5]] },
+  attendo: { name: "Attendo", cat: ["ppu", "npu"], Icon: Users, desc: "Attendance, payroll and workforce management.", caps: ["Payroll", "Biometric attendance", "Compliance"], hardware: true, groups: "attendo", petpooja: attendoPetpooja, comps: attendoComps, calcInputs: [["employees", "Employees", 50]], perUnitCalc: "employees" },
+  invoice: { name: "Invoice", cat: ["npu"], Icon: FileText, desc: "Simple invoicing and GST billing for growing businesses.", caps: ["GST invoice", "E-invoice", "Payments"], hardware: false, groups: "invoice", petpooja: invPetpooja, comps: invComps, calcInputs: [["users", "Users", 3]], perUnitCalc: "users", integrations: INVOICE_INTEGRATIONS },
+};
+const CATS = { ppu: ["pos", "marketing", "attendo"], npu: ["invoice", "attendo"] };
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
 
 /* ---------- COMPETITOR PLAN TIERS (Attendo / POS / Marketing) ----------
    Real, published tiers where available; "Custom pricing / Not publicly
@@ -359,7 +423,11 @@ const ATTENDO_CPLANS = {
 const POS_CPLANS = {
   restroworks: [{ id: "basic", name: "Basic", def: true, price: "≈ ₹40,000 + GST / yr", note: "Cloud POS, billing, inventory management, CRM & customer segmentation, dedicated Zomato order server, after-sales support & training.", rate: () => Math.round(40000/12) }, { id: "enterprise", name: "Enterprise", price: "Custom quote", custom: true, note: "Multi-brand / large-chain, advanced analytics & integrations." }],
   rista: [{ id: "pos", name: "Billing POS + QR", def: true, price: "₹15,000 + GST (₹17,700)", note: "POS billing, QR ordering, online ordering, 3rd-party integrations, discounts/charges/deals, business reports & analytics. 12 months.", rate: () => Math.round(15000/12) }, { id: "pos-crm", name: "POS + CRM & Loyalty", price: "₹25,000 + GST", note: "Everything in POS + CRM, loyalty program, engagement, retention & insights.", rate: () => Math.round(25000/12) }, { id: "bundle", name: "POS + CRM + WhatsApp", badge: "Special bundle", price: "₹35,000 + GST (₹41,300)", note: "Rista Billing POS + QR, CRM & Loyalty, WhatsApp Kickstarter (campaigns & notifications). 12 months, specially discounted.", rate: () => Math.round(35000/12) }],
+<<<<<<< HEAD
   dineers: [{ id: "standard", name: "Standard", def: true, price: "Not publicly listed", custom: true, note: "Restaurant POS & billing." }, { id: "premium", name: "Premium", price: "Not publicly listed", custom: true, note: "+ multi-outlet & integrations." }],
+=======
+  dotpe: [{ id: "basic", name: "Basic", def: true, price: "Not publicly listed", custom: true, note: "Ordering + POS, QR menu." }, { id: "pro", name: "Pro", price: "Not publicly listed", custom: true, note: "+ storefront, payments, marketing." }],
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
   tmbill: [{ id: "core", name: "Core (Most Popular)", def: true, price: "₹10,000 yr1 · ₹8,000 renewal", note: "Cloud POS (unlimited devices/users), billing & KOT, menu, table, discounts, anti-theft, CRM Hub, 24×7 support, customer display, owner app, virtual wallet, 100+ reports, inventory, vendors, recipe & purchase management, QR ordering, Zomato/Swiggy integration.", rate: () => Math.round(10000/12) }, { id: "plus", name: "Core + Plus add-ons", price: "₹10,000 + add-ons", note: "Add-ons (yearly): Captain App / KDS / Loyalty / Feedback / Call Centre / Table Reservation ₹3,000 each · UPI ₹4,000 · Accounting ₹10,000 · WhatsApp ₹10,000 · Website ₹10,000.", rate: () => Math.round(10000/12) }],
   ezo: [{ id: "free", name: "Free", def: true, price: "Free", note: "Basic billing & inventory app.", rate: () => 0 }, { id: "premium", name: "Premium", price: "Paid (verify)", custom: true, note: "+ advanced billing, GST, reports." }],
   menson: [{ id: "standard", name: "Standard", def: true, price: "Not publicly listed", custom: true, note: "Restaurant billing & POS." }, { id: "plus", name: "Plus", price: "Not publicly listed", custom: true, note: "+ more outlets & modules." }],
@@ -368,12 +436,18 @@ const MKT_CPLANS = {
   xeno: [{ id: "core", name: "Core", def: true, price: "Custom pricing", custom: true, note: "Restaurant CRM, campaigns, loyalty." }, { id: "growth", name: "Growth", price: "Custom pricing", custom: true, note: "+ advanced automation & analytics." }],
   limetray: [{ id: "core", name: "Core", def: true, price: "Custom pricing", custom: true, note: "Engagement & loyalty suite." }, { id: "growth", name: "Growth", price: "Custom pricing", custom: true, note: "+ broader restaurant tech modules." }],
   wateron: [{ id: "std", name: "Standard", def: true, price: "Custom pricing", custom: true, note: "General CRM & campaigns." }, { id: "pro", name: "Pro", price: "Custom pricing", custom: true, note: "+ automation & reporting." }],
+<<<<<<< HEAD
   reelo: [{ id: "free", name: "Free (Forever)", price: "Free", note: "SMS/email campaigns, customer insights, analytics, RFM segmentation.", rate: () => 0 }, { id: "growth", name: "Growth", def: true, price: "₹3,250 / outlet / mo (₹39,000/yr)", note: "Loyalty, membership, WhatsApp/SMS/email campaigns, feedback, reviews, automation. 14-day trial.", rate: () => 3250 }, { id: "pro", name: "Pro / Enterprise", price: "Custom", custom: true, note: "Higher volumes, multi-outlet chains, advanced features." }],
+=======
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
 };
 Object.keys(ATTENDO_CPLANS).forEach((k) => { if (attendoComps[k]) attendoComps[k].pricing.plans = ATTENDO_CPLANS[k]; });
 Object.keys(POS_CPLANS).forEach((k) => { if (posComps[k]) posComps[k].pricing.plans = POS_CPLANS[k]; });
 Object.keys(MKT_CPLANS).forEach((k) => { if (mktComps[k]) mktComps[k].pricing.plans = MKT_CPLANS[k]; });
+<<<<<<< HEAD
 Object.keys(attendoComps).forEach((k) => { const ff = attendoComps[k].features; ff.announcement = (k === "keka" || k === "zoho-hr") ? Y : (k === "greythr" || k === "pagarbook") ? P : N; ff.bgVerification = N; ff.geoTracking = (k === "keka" || k === "zoho-hr" || k === "greythr" || k === "tankhapatra") ? P : N; ff.mediclaimAddon = N; });
+=======
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
 
 /* ============================================================================
    UI PRIMITIVES
@@ -613,18 +687,24 @@ function Calculator({ prod, comp, pName, ppPlan, compPlan }) {
   const key = prod.calcInputs[0][0];
   const [n, setN] = useState(prod.calcInputs[0][2]);
   const [period, setPeriod] = useState("annual");
+<<<<<<< HEAD
   const [addOn, setAddOn] = useState({});
   const [addonEmp, setAddonEmp] = useState(50);
+=======
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
   const months = period === "monthly" ? 1 : period === "annual" ? 12 : 36;
   const legacy = (calc) => (calc ? (calc(n) == null ? null : calc(n) * months) : null);
   const mult = prod.perOutlet ? Math.max(1, n) : 1; // POS is priced per outlet
   const scale = (v) => (v == null ? null : v * mult);
   const pp = scale(ppPlan ? planCost(ppPlan, n, period) : legacy(prod.petpooja.pricing.calc));
   const cp = scale(compPlan ? planCost(compPlan, n, period) : legacy(comp.pricing.calc));
+<<<<<<< HEAD
   const anyAddon = (prod.addons || []).some((a) => addOn[a.id]);
   const aEmp = Math.min(addonEmp, n);
   const addonCost = (prod.addons || []).reduce((s, a) => addOn[a.id] ? s + (a.per === "once" ? a.amt * aEmp : (period === "monthly" ? Math.round(a.amt * aEmp / 12) : period === "annual" ? a.amt * aEmp : a.amt * aEmp * 3)) : s, 0);
   const ppT = pp == null ? null : pp + addonCost;
+=======
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
   const label = (period === "monthly" ? "for 1 month" : period === "annual" ? "for 1 year" : "over 3 years") + (prod.perOutlet ? ` · ${mult} outlet${mult > 1 ? "s" : ""}` : "");
   return (
     <div style={{ background: C.dark, borderRadius: 24, padding: 28, color: "#fff", boxShadow: "0 20px 50px rgba(23,32,42,.28)" }}>
@@ -642,22 +722,37 @@ function Calculator({ prod, comp, pName, ppPlan, compPlan }) {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       {prod.addons && <div style={{ marginBottom: 18 }}><div style={{ fontSize: 12.5, color: "#B7C0CB", marginBottom: 8 }}>Optional add-ons (per employee, +GST):</div><div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>{prod.addons.map((a) => { const on = !!addOn[a.id]; return <button key={a.id} onClick={() => setAddOn((o) => ({ ...o, [a.id]: !o[a.id] }))} style={{ border: `1.5px solid ${on ? C.red : "rgba(255,255,255,.22)"}`, background: on ? "rgba(229,57,53,.22)" : "transparent", color: "#fff", borderRadius: 999, padding: "7px 13px", fontSize: 12.5, fontWeight: 700, cursor: "pointer" }}>{on ? "✓ " : "+ "}{a.label} <span style={{ color: "#B7C0CB", fontWeight: 500 }}>₹{a.amt}{a.per === "once" ? " once" : "/yr"}/emp</span></button>; })}</div>{anyAddon && (<div style={{ marginTop: 12, background: "rgba(255,255,255,.06)", borderRadius: 12, padding: "12px 14px" }}><div style={{ display: "flex", justifyContent: "space-between", marginBottom: 9 }}><span style={{ fontSize: 13, color: "#B7C0CB" }}>Employees needing add-ons</span><span style={{ fontSize: 15, fontWeight: 800 }}>{aEmp} <span style={{ fontSize: 12, fontWeight: 500, color: "#7C8794" }}>of {n}</span></span></div><input type="range" min={1} max={n} step={1} value={aEmp} onChange={(e) => setAddonEmp(+e.target.value)} className="pc-range" style={{ width: "100%" }} /></div>)}</div>}
       <div className="pc-calc-out" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 12 }}>
         <div style={{ background: "rgba(229,57,53,.16)", border: "1px solid rgba(229,57,53,.4)", borderRadius: 16, padding: "16px 18px" }}>
           <div style={{ fontSize: 12.5, color: "#FFB4B0", fontWeight: 700 }}>Petpooja {pName}{ppPlan ? ` · ${ppPlan.name.split("(")[0].trim()}` : ""}</div>
           <div style={{ fontSize: 26, fontWeight: 800, marginTop: 4 }}>{ppT == null ? "Custom" : inr(ppT)}</div>
           <div style={{ fontSize: 11.5, color: "#B7C0CB" }}>{ppT == null ? "request a quote" : label}{addonCost ? " incl. add-ons" : ""}</div>
+=======
+      <div className="pc-calc-out" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 12 }}>
+        <div style={{ background: "rgba(229,57,53,.16)", border: "1px solid rgba(229,57,53,.4)", borderRadius: 16, padding: "16px 18px" }}>
+          <div style={{ fontSize: 12.5, color: "#FFB4B0", fontWeight: 700 }}>Petpooja {pName}{ppPlan ? ` · ${ppPlan.name.split("(")[0].trim()}` : ""}</div>
+          <div style={{ fontSize: 26, fontWeight: 800, marginTop: 4 }}>{pp == null ? "Custom" : inr(pp)}</div>
+          <div style={{ fontSize: 11.5, color: "#B7C0CB" }}>{pp == null ? "request a quote" : label}</div>
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
         </div>
         <div style={{ background: "rgba(255,255,255,.06)", borderRadius: 16, padding: "16px 18px" }}>
           <div style={{ fontSize: 12.5, color: "#B7C0CB", fontWeight: 700 }}>{comp.name}{compPlan ? ` · ${compPlan.name}` : ""}</div>
           <div style={{ fontSize: 26, fontWeight: 800, marginTop: 4 }}>{cp == null ? "Custom" : inr(cp)}</div>
           <div style={{ fontSize: 11.5, color: "#7C8794" }}>{cp == null ? "quote-based" : label}</div>
         </div>
+<<<<<<< HEAD
         <div style={{ background: ppT != null && cp != null ? "rgba(18,183,106,.14)" : "rgba(255,255,255,.06)", border: ppT != null && cp != null ? "1px solid rgba(18,183,106,.4)" : "none", borderRadius: 16, padding: "16px 18px" }}>
           <div style={{ fontSize: 12.5, color: "#86E5B4", fontWeight: 700 }}>Difference</div>
           <div style={{ fontSize: 26, fontWeight: 800, marginTop: 4 }}>{ppT == null || cp == null ? "—" : inr(Math.abs(cp - ppT))}</div>
           <div style={{ fontSize: 11.5, color: "#7C8794" }}>{ppT == null || cp == null ? "not comparable" : label}</div>
+=======
+        <div style={{ background: pp != null && cp != null ? "rgba(18,183,106,.14)" : "rgba(255,255,255,.06)", border: pp != null && cp != null ? "1px solid rgba(18,183,106,.4)" : "none", borderRadius: 16, padding: "16px 18px" }}>
+          <div style={{ fontSize: 12.5, color: "#86E5B4", fontWeight: 700 }}>Difference</div>
+          <div style={{ fontSize: 26, fontWeight: 800, marginTop: 4 }}>{pp == null || cp == null ? "—" : inr(Math.abs(cp - pp))}</div>
+          <div style={{ fontSize: 11.5, color: "#7C8794" }}>{pp == null || cp == null ? "not comparable" : label}</div>
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
         </div>
       </div>
       <p style={{ fontSize: 11.5, color: "#7C8794", margin: "16px 0 0" }}>Estimated using published pricing where available. Excludes GST, setup and hardware. Not an official quotation.</p>
@@ -821,6 +916,7 @@ function Integrations({ data }) {
           </div>
         ))}
       </div>
+<<<<<<< HEAD
       {data.marketing && <>
         <div style={{ fontSize: 12.5, fontWeight: 700, color: C.muted, margin: "18px 0 10px" }}>Marketing & Loyalty add-ons (per year)</div>
         <div className="pc-intgrid" style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 12 }}>
@@ -836,6 +932,8 @@ function Integrations({ data }) {
           ))}
         </div>
       </>}
+=======
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginTop: 12, background: C.bg, border: `1px solid ${C.border}`, borderRadius: 14, padding: "14px 16px" }}>
         <div><div style={{ fontWeight: 800, color: C.dark, fontSize: 13.5 }}>{data.extra.name}</div><div style={{ fontSize: 12, color: C.muted }}>{data.extra.desc}</div></div>
         <span style={{ fontWeight: 800, color: C.red, fontSize: 14, whiteSpace: "nowrap" }}>{data.extra.price}</span>
@@ -905,10 +1003,13 @@ function CompareApp() {
   const chooseProd = (p) => { setProdKey(p); setCompSlug(null); setTimeout(() => document.getElementById("choose-comp")?.scrollIntoView({ behavior: "smooth" }), 60); };
 
   const prod = prodKey ? PRODUCTS[prodKey] : null;
+<<<<<<< HEAD
   const [invMode, setInvMode] = useState(() => (new Date() >= new Date("2026-10-01") ? "after" : "before"));
   const effProd = (prod && prodKey === "invoice" && prod.petpooja.pricing.plansAfter)
     ? { ...prod, petpooja: { ...prod.petpooja, pricing: { ...prod.petpooja.pricing, plans: invMode === "after" ? prod.petpooja.pricing.plansAfter : prod.petpooja.pricing.plans } } }
     : prod;
+=======
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
   const comp = prod && compSlug ? prod.comps[compSlug] : null;
   const pName = prod ? prod.name : "";
 
@@ -916,7 +1017,11 @@ function CompareApp() {
   const [cpPlanId, setCpPlanId] = useState(null);
   useEffect(() => { setPpPlanId(prod ? defPlanId(prod.petpooja.pricing) : null); }, [prodKey]);
   useEffect(() => { setCpPlanId(comp ? defPlanId(comp.pricing) : null); }, [prodKey, compSlug]);
+<<<<<<< HEAD
   const ppPlan = effProd ? getPlanById(effProd.petpooja.pricing, ppPlanId) : null;
+=======
+  const ppPlan = prod ? getPlanById(prod.petpooja.pricing, ppPlanId) : null;
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
   const compPlan = comp ? getPlanById(comp.pricing, cpPlanId) : null;
 
   const share = () => { try { window.open(`https://wa.me/?text=${encodeURIComponent(`Compare Petpooja ${pName} vs ${comp.name} ` + window.location.href)}`, "_blank"); } catch {} };
@@ -976,6 +1081,7 @@ function CompareApp() {
       {/* COMPARISON */}
       {prod && comp && (
         <div key={prodKey + compSlug} className="pc-swap">
+<<<<<<< HEAD
           {prodKey === "invoice" && (
             <div className="pc-no-print" style={{ ...container, padding: "12px 20px 0", display: "flex", justifyContent: "center" }}>
               <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: C.card, border: `1px solid ${C.border}`, borderRadius: 999, padding: "6px 8px 6px 14px", boxShadow: "0 4px 16px rgba(16,24,40,.06)" }}>
@@ -984,6 +1090,8 @@ function CompareApp() {
               </div>
             </div>
           )}
+=======
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
           <JumpNav prod={prod} />
           <Block><div id="cmp"><SectionHead kicker="Head to head" title={`Petpooja ${pName} vs ${comp.name}`} sub="Petpooja stays on the left. Everything below updates for your selection." />
             <div className="pc-two" style={{ display: "grid", gridTemplateColumns: "1fr auto 1fr", gap: 16, alignItems: "center" }}>
@@ -993,6 +1101,7 @@ function CompareApp() {
             </div>
           </div></Block>
 
+<<<<<<< HEAD
           <Block><SectionHead kicker="Pricing" title="Pricing comparison" sub="Compare the real pricing model, not just the starting price." /><Pricing prod={effProd} comp={comp} pName={pName} ppPlan={ppPlan} setPpPlan={setPpPlanId} compPlan={compPlan} setCompPlan={setCpPlanId} /></Block>
           <Block id="calculator"><Calculator prod={effProd} comp={comp} pName={pName} ppPlan={ppPlan} compPlan={compPlan} /></Block>
           <Block><SectionHead kicker="Features" title="Feature comparison" sub="Tap a category to expand. First two are open by default." /><Features prod={effProd} comp={comp} /></Block>
@@ -1000,6 +1109,15 @@ function CompareApp() {
           {effProd.integrations && <Block id="integrations"><SectionHead kicker="Integrations" title="Payment & Tally integrations" sub="EDC machines, Android POS, dynamic QR and Tally — available with Petpooja Invoice." /><Integrations data={effProd.integrations} /></Block>}
           <Block id="advantages"><SectionHead kicker="Advantages" title="Where each stands out" /><Advantages prod={effProd} comp={comp} /></Block>
           <Block id="summary"><SectionHead kicker="Summary" title="Comparison summary" sub="A transparent tally — where Petpooja leads, where they're similar, and where the competitor leads." /><Summary prod={effProd} comp={comp} /></Block>
+=======
+          <Block><SectionHead kicker="Pricing" title="Pricing comparison" sub="Compare the real pricing model, not just the starting price." /><Pricing prod={prod} comp={comp} pName={pName} ppPlan={ppPlan} setPpPlan={setPpPlanId} compPlan={compPlan} setCompPlan={setCpPlanId} /></Block>
+          <Block id="calculator"><Calculator prod={prod} comp={comp} pName={pName} ppPlan={ppPlan} compPlan={compPlan} /></Block>
+          <Block><SectionHead kicker="Features" title="Feature comparison" sub="Tap a category to expand. First two are open by default." /><Features prod={prod} comp={comp} /></Block>
+          {prod.hardware && <Block id="hardware"><SectionHead kicker="Hardware" title="Hardware comparison" sub="Devices, printers and installation — shown only where hardware is relevant." /><Hardware prod={prod} comp={comp} /></Block>}
+          {prod.integrations && <Block id="integrations"><SectionHead kicker="Integrations" title="Payment & Tally integrations" sub="EDC machines, Android POS, dynamic QR and Tally — available with Petpooja Invoice." /><Integrations data={prod.integrations} /></Block>}
+          <Block id="advantages"><SectionHead kicker="Advantages" title="Where each stands out" /><Advantages prod={prod} comp={comp} /></Block>
+          <Block id="summary"><SectionHead kicker="Summary" title="Comparison summary" sub="A transparent tally — where Petpooja leads, where they're similar, and where the competitor leads." /><Summary prod={prod} comp={comp} /></Block>
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
           <Block><div id="sources"><SectionHead kicker="Transparency" title="Data sources" /><Sources prod={prod} comp={comp} /></div></Block>
 
           <section className="pc-no-print" style={{ padding: "6px 20px 40px" }}>
@@ -1082,6 +1200,7 @@ button:active{transform:translateY(1px) scale(.995);}
   .pc-calc-in,.pc-calc-out{grid-template-columns:1fr !important;}
   h1{font-size:32px !important;}
 }
+<<<<<<< HEAD
 @media print{
   .pc-no-print{display:none !important;}
   .pc-reveal{opacity:1 !important;transform:none !important;}
@@ -1095,6 +1214,11 @@ button:active{transform:translateY(1px) scale(.995);}
   .pc-two > div, .pc-three > div{break-inside:avoid;}
   @page{margin:12mm;size:auto;}
 }\n`;/* ============================================================================
+=======
+@media print{.pc-no-print{display:none !important;}.pc-reveal{opacity:1 !important;transform:none !important;}body{background:#fff;}}\n`;
+
+/* ============================================================================
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
    AUTH LAYER (Neon via /api serverless functions). Roles + permanent DB.
    Super Admin (custom pw) manages admins + super admins + employees.
    Admin (custom pw) manages employees. Employee pw derived from email.
@@ -1176,6 +1300,7 @@ function Login({ onAuthed }) {
             <button style={btn} onClick={submit} disabled={busy}>{busy ? <><Loader2 size={17} className="pc-spin" /> Signing in...</> : <>Sign in <ArrowRight size={17} /></>}</button>
             {err && <div style={{ color: C.red, fontSize: 13, marginTop: 16, background: C.redSoft, padding: "10px 12px", borderRadius: 10, lineHeight: 1.5 }}>{err}</div>}
           </div>
+<<<<<<< HEAD
           <div style={{ marginTop: 22, background: C.bg, border: `1px solid ${C.border}`, borderRadius: 12, padding: "13px 14px", fontSize: 12.5, color: C.muted, lineHeight: 1.55 }}>
             <div style={{ fontWeight: 800, color: C.dark, fontSize: 12.5, marginBottom: 6, display: "inline-flex", alignItems: "center", gap: 6 }}><ShieldCheck size={14} style={{ color: C.green }} /> How to sign in</div>
             <div><b style={{ color: C.dark }}>Email:</b> your Petpooja work email (e.g. name.surname@petpooja.com).</div>
@@ -1183,6 +1308,10 @@ function Login({ onAuthed }) {
           </div>
           <div style={{ marginTop: 12, paddingTop: 14, borderTop: `1px solid ${C.border}`, fontSize: 12.5, color: C.muted }}>
             <div style={{ display: "flex", gap: 7, alignItems: "flex-start" }}><Mail size={14} style={{ color: C.red, flexShrink: 0, marginTop: 1 }} /><span>Not on the list? For access, contact <a href={"mailto:" + CONTACT} style={{ color: C.red, fontWeight: 700, textDecoration: "none" }}>{CONTACT}</a></span></div>
+=======
+          <div style={{ marginTop: 26, paddingTop: 18, borderTop: `1px solid ${C.border}`, fontSize: 12.5, color: C.muted }}>
+            <div style={{ display: "flex", gap: 7, alignItems: "flex-start" }}><ShieldCheck size={15} style={{ color: C.green, flexShrink: 0, marginTop: 1 }} /><span>Don't have access? For login, contact <a href={"mailto:" + CONTACT} style={{ color: C.red, fontWeight: 700, textDecoration: "none" }}>{CONTACT}</a></span></div>
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
           </div>
         </div>
       </div>
@@ -1198,8 +1327,13 @@ function AdminHeader({ user, logout, onBack }) {
 }
 function Admin({ user, logout, onBack }) {
   const isSuper = user.role === "superadmin";
+<<<<<<< HEAD
   const [employees, setEmployees] = useState([]), [staff, setStaff] = useState([]), [usage, setUsage] = useState([]), [feedback, setFeedback] = useState([]), [loading, setLoading] = useState(true);
   const [newEmail, setNewEmail] = useState(""), [bulk, setBulk] = useState(""), [bulkMode, setBulkMode] = useState("add"), [msg, setMsg] = useState(""), [copied, setCopied] = useState("");
+=======
+  const [employees, setEmployees] = useState([]), [staff, setStaff] = useState([]), [usage, setUsage] = useState([]), [loading, setLoading] = useState(true);
+  const [newEmail, setNewEmail] = useState(""), [bulk, setBulk] = useState(""), [msg, setMsg] = useState(""), [copied, setCopied] = useState("");
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
   const [sEmail, setSEmail] = useState(""), [sPass, setSPass] = useState(""), [sRole, setSRole] = useState("admin"), [sMsg, setSMsg] = useState("");
   const api = (action, extra) => API("/api/admin", { action, adminEmail: user.email, adminPassword: user.password, ...(extra || {}) });
   const load = async () => {
@@ -1208,7 +1342,10 @@ function Admin({ user, logout, onBack }) {
     if (isSuper) calls.push(api("list_staff"));
     const res = await Promise.all(calls);
     setEmployees(res[0].data || []); setUsage(res[1].data || []); if (isSuper) setStaff(res[2].data || []);
+<<<<<<< HEAD
     const fb = await api("feedback"); setFeedback(fb.data || []);
+=======
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
     setLoading(false);
   };
   useEffect(() => { load(); }, []);
@@ -1220,6 +1357,7 @@ function Admin({ user, logout, onBack }) {
     setMsg("Added " + (r.count || 0) + " employee" + ((r.count || 0) === 1 ? "" : "s")); load();
   };
   const addOne = async () => { await addEmployees([newEmail]); setNewEmail(""); };
+<<<<<<< HEAD
     const removeEmployees = async (list) => {
     const clean = list.map((x) => x.trim().toLowerCase()).filter(Boolean);
     if (!clean.length) { setMsg("No emails to remove."); return; }
@@ -1228,6 +1366,9 @@ function Admin({ user, logout, onBack }) {
     setMsg("Removed " + (r.count || 0) + " employee" + ((r.count || 0) === 1 ? "" : "s")); load();
   };
   const runBulk = async () => { const list = bulk.split(/[\s,;]+/); if (bulkMode === "add") await addEmployees(list); else await removeEmployees(list); setBulk(""); };
+=======
+  const addBulk = async () => { await addEmployees(bulk.split(/[\s,;]+/)); setBulk(""); };
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
   const removeEmp = async (e) => { await api("remove_employee", { target: e }); load(); };
   const addStaff = async () => {
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(sEmail)) { setSMsg("Enter a valid email."); return; }
@@ -1279,6 +1420,7 @@ function Admin({ user, logout, onBack }) {
           {newEmail.includes("@") && <div style={{ marginTop: 10, fontSize: 12.5, color: C.muted }}>Password will be: <b style={{ color: C.dark, fontFamily: "monospace" }}>{genPassword(newEmail)}</b></div>}
         </div>
         <div style={card}>
+<<<<<<< HEAD
           <div style={{ fontWeight: 800, fontSize: 15.5, marginBottom: 3 }}>Bulk add / remove (paste from Excel)</div>
           <div style={{ fontSize: 13, color: C.muted, marginBottom: 12 }}>Pick an action, paste emails (one per line or comma-separated).</div>
           <div style={{ display: "inline-flex", gap: 4, background: C.bg, borderRadius: 10, padding: 4, marginBottom: 10 }}>
@@ -1286,6 +1428,12 @@ function Admin({ user, logout, onBack }) {
           </div>
           <textarea style={{ ...input, width: "100%", height: 76, resize: "vertical", fontFamily: "inherit" }} placeholder={"a.sharma@petpooja.com\nb.verma@petpooja.com"} value={bulk} onChange={(e) => setBulk(e.target.value)} />
           <button onClick={runBulk} style={{ ...addBtn, marginTop: 10 }}>{bulkMode === "remove" ? <><Trash2 size={16} /> Remove all</> : <><UserPlus size={16} /> Add all</>}</button>
+=======
+          <div style={{ fontWeight: 800, fontSize: 15.5, marginBottom: 3 }}>Bulk add (paste from Excel)</div>
+          <div style={{ fontSize: 13, color: C.muted, marginBottom: 14 }}>One email per line, or comma-separated.</div>
+          <textarea style={{ ...input, width: "100%", height: 76, resize: "vertical", fontFamily: "inherit" }} placeholder={"a.sharma@petpooja.com\nb.verma@petpooja.com"} value={bulk} onChange={(e) => setBulk(e.target.value)} />
+          <button onClick={addBulk} style={{ ...addBtn, marginTop: 10 }}><UserPlus size={16} /> Add all</button>
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
         </div>
       </div>
       {msg && <div style={{ fontSize: 13, color: msg.startsWith("Added") ? "#0B7A48" : C.red, margin: "0 0 16px" }}>{msg}</div>}
@@ -1306,22 +1454,30 @@ function Admin({ user, logout, onBack }) {
         {usage.length === 0 && <div style={{ color: C.muted, fontSize: 13, padding: "12px 0" }}>No activity yet.</div>}
         {usage.map((u) => <div key={u.email} style={{ display: "grid", gridTemplateColumns: "1fr 90px 150px", padding: "11px 0", borderBottom: `1px solid ${C.border}`, alignItems: "center" }}><span style={{ fontSize: 14 }}>{u.email}</span><span style={{ textAlign: "right", fontWeight: 800 }}>{u.opens}</span><span style={{ textAlign: "right", fontSize: 13, color: C.muted }}>{u.last_seen ? new Date(u.last_seen).toLocaleString() : "-"}</span></div>)}
       </div>
+<<<<<<< HEAD
       <div style={{ ...card, marginTop: 20 }}>
         <div style={{ fontWeight: 800, fontSize: 15.5, marginBottom: 3 }}>Feedback from users</div>
         <div style={{ fontSize: 13, color: C.muted, marginBottom: 14 }}>Submitted via the Feedback button on the site.</div>
         {feedback.length === 0 && <div style={{ color: C.muted, fontSize: 13, padding: "6px 0" }}>No feedback yet.</div>}
         {feedback.map((fb, i) => <div key={i} style={{ padding: "11px 0", borderBottom: `1px solid ${C.border}` }}><div style={{ fontSize: 14, color: C.dark }}>{fb.message}</div><div style={{ fontSize: 11.5, color: C.muted, marginTop: 3 }}>{fb.email || "anonymous"} · {fb.created_at ? new Date(fb.created_at).toLocaleString() : ""}</div></div>)}
       </div>
+=======
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
     </div>
   </div>;
 }
 function LoggedInBar({ user, logout, onAdmin }) {
+<<<<<<< HEAD
   return <div className="pc-no-print" style={{ background: C.dark, color: "#fff", padding: "7px 20px", display: "flex", justifyContent: "flex-end", alignItems: "center", gap: 14, fontSize: 13, fontFamily: "Inter, system-ui, sans-serif" }}>
+=======
+  return <div style={{ background: C.dark, color: "#fff", padding: "7px 20px", display: "flex", justifyContent: "flex-end", alignItems: "center", gap: 14, fontSize: 13, fontFamily: "Inter, system-ui, sans-serif" }}>
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
     <span style={{ color: "#9aa5b1" }}>Signed in</span><span style={{ fontWeight: 600 }} className="pc-hide-sm">{user.email}</span>
     {onAdmin && <button onClick={onAdmin} style={{ border: "none", background: "rgba(255,255,255,.14)", color: "#fff", borderRadius: 999, padding: "4px 12px", fontWeight: 700, cursor: "pointer", fontSize: 12.5 }}>{user.role === "superadmin" ? "Super Admin" : "Admin"}</button>}
     <button onClick={logout} style={{ border: "none", background: C.red, color: "#fff", borderRadius: 999, padding: "4px 12px", fontWeight: 700, cursor: "pointer", fontSize: 12.5, display: "inline-flex", alignItems: "center", gap: 5 }}><LogOut size={13} /> Log out</button>
   </div>;
 }
+<<<<<<< HEAD
 
 function FeedbackWidget({ user }) {
   const [open, setOpen] = useState(false), [text, setText] = useState(""), [sent, setSent] = useState(false), [busy, setBusy] = useState(false);
@@ -1356,11 +1512,21 @@ function FeedbackWidget({ user }) {
 
 export default function App() {
   const [user, setUser] = useState(() => { try { return JSON.parse(localStorage.getItem("pc_user") || "null"); } catch { return null; } });
+=======
+export default function App() {
+  const [user, setUser] = useState(() => {
+    try { return JSON.parse(localStorage.getItem("pc_user") || "null"); } catch { return null; }
+  });
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
   const [view, setView] = useState("dashboard");
   const isAdmin = user && (user.role === "admin" || user.role === "superadmin");
   const login = (u) => { try { localStorage.setItem("pc_user", JSON.stringify(u)); } catch {} setUser(u); setView("dashboard"); };
   const logout = () => { try { localStorage.removeItem("pc_user"); } catch {} setUser(null); };
   if (!user) return <Login onAuthed={login} />;
   if (view === "admin" && isAdmin) return <Admin user={user} logout={logout} onBack={() => setView("dashboard")} />;
+<<<<<<< HEAD
   return <><LoggedInBar user={user} logout={logout} onAdmin={isAdmin ? () => setView("admin") : null} /><FeedbackWidget user={user} /><CompareApp /></>;
+=======
+  return <><LoggedInBar user={user} logout={logout} onAdmin={isAdmin ? () => setView("admin") : null} /><CompareApp /></>;
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
 }

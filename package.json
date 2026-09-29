@@ -10,8 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@supabase/supabase-js": "^2.115.0",
     "lucide-react": "^1.47.0",
+=======
+    "@neondatabase/serverless": "^1.1.0",
+    "lucide-react": "^1.41.0",
+>>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
