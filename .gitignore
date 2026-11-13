@@ -9,11 +9,6 @@ lerna-debug.log*
 
 node_modules
 dist
-<<<<<<< HEAD
-.env
-.env.local
-=======
->>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
 dist-ssr
 *.local
 
@@ -27,8 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-<<<<<<< HEAD
-=======
-
-.vercel
->>>>>>> de3fdcbf94db1af96ca1b4197527bc54cc92fb40
