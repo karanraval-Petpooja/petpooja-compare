@@ -44,6 +44,7 @@ const GROUPS = {
     { key: "plus", title: "Petpooja Plus (why we win)", rows: [["purchaseByPetpooja", "Purchase by Petpooja (FREE - snap image, auto inventory)"], ["captainApp", "Captain App"], ["kds", "Kitchen Display (KDS)"], ["waiterCall", "Waiter Calling Device"], ["trm", "Table Reservation Manager"], ["digitalDisplay", "Digital Display"], ["myWebsite", "My Website (own ordering)"], ["reconciliation", "Order Reconciliation"], ["virtualWallet", "Virtual Wallet"], ["purchaseManager", "Purchase Manager (price compare)"], ["wabaMarketing", "WABA Marketing & e-Bills"]] },
   ],
   marketing: [
+    { key: "ai", title: "AI Assistant", rows: [["mojoAI", "MOJO AI — ask your business questions (e.g. how many customers retained last month)"]] },
     { key: "acquire", title: "Acquire New Customers", rows: [["influencerMeta", "Influencer + Meta"], ["meta", "Meta Ads"], ["snapchat", "Snapchat"], ["whatsappMkt", "WhatsApp"]] },
     { key: "retain", title: "Retain Customers", rows: [["waba", "WABA"], ["feedback", "Feedback"], ["loyaltyPts", "Loyalty Points"], ["reputation", "Reputation"]] },
     { key: "spend", title: "Increase Avg Spending", rows: [["digitalDisplay", "Digital Display"], ["trm", "TRM"]] },
@@ -179,7 +180,7 @@ const posComps = {
 };
 
 /* ---------- MARKETING AUTOMATION ---------- */
-const mktDefault = fill("marketing", Y, { snapchat: P, influencerMeta: P, digitalDisplay: N, trm: N, waba: P });
+const mktDefault = fill("marketing", Y, { snapchat: P, influencerMeta: P, digitalDisplay: N, trm: N, waba: P, mojoAI: N });
 const mktPetpooja = {
   pricing: {
     headline: "Core ₹10,000 · Growth ₹20,000 · Scale ₹30,000 / yr", model: "Marketing Manager tiers", billing: "Annual (Ex GST)", perUnit: "—", hardware: "—", setup: "—", geo: "—",
@@ -198,7 +199,7 @@ const mktPetpooja = {
 const mktComp = (name, tagline, over = {}, adv = [], url = "") => ({
   name, tagline,
   pricing: { headline: "Custom pricing", model: "Custom / contact sales", billing: "Custom", perUnit: "Not publicly listed", hardware: "—", setup: "Varies", geo: "—", custom: true, calc: () => null },
-  features: fill("marketing", Y, { snapchat: P, influencerMeta: P, digitalDisplay: N, trm: N, waba: P, ...over }), hardware: {}, advantages: adv.length ? adv : ["Comparable engagement platform"],
+  features: fill("marketing", Y, { snapchat: P, influencerMeta: P, digitalDisplay: N, trm: N, waba: P, mojoAI: N, ...over }), hardware: {}, advantages: adv.length ? adv : ["Comparable engagement platform"],
   sources: [{ name, url, date: "Aug 2026" }],
 });
 const mktComps = {
@@ -212,14 +213,10 @@ const mktComps = {
 const invPetpooja = {
   pricing: {
     headline: "Basic ₹6,000 · Advance ₹12,000 / yr", model: "Flat plan (Basic / Advance) · no per-user", billing: "Annual (1-yr & 3-yr)", perUnit: "Per outlet", hardware: "—", setup: "Low", geo: "—",
-    note: "Effective 1 Sep 2026. Prices exclude GST.",
+    note: "Effective 1 Oct 2026. Prices exclude GST.",
     plans: [
-      { id: "basic", name: "Basic", def: true, y1: 6000, y3: 10000, renewal: 3500, renewalLabel: "Renewal / year", note: "All core POS & business features — Billing, Inventory, Reporting, HO/Warehouse, Multi-User, WhatsApp E-Bills." },
-      { id: "advance", name: "Advance", badge: "Most features", y1: 12000, y3: 16000, renewal: 5000, renewalLabel: "Renewal / year", note: "Everything in Basic + Purchase by Petpooja (supplier invoices sync automatically — no manual entry), Purchase AI, Shopify, Tally, Loyalty, Website Integration, EDC, ADSR, AI Try-On (clothing), AI Theft Detection, WhatsApp Messaging & upcoming integrations." },
-    ],
-    plansAfter: [
-      { id: "basic", name: "Basic", def: true, y1: 6000, y3: 10000, renewal: 3500, renewalLabel: "Renewal / year", note: "Billing & POS, Multi-Counter / Multi-User, HO & Warehouse Management, Inventory, Reporting, Accounting features, Mobile B2C app, Weighing scale, Unlimited WhatsApp E-Bills via WABA. All core retail needs, no extra add-ons required." },
-      { id: "advance", name: "Advance", badge: "Complete", y1: 12000, y3: 16000, renewal: 5000, renewalLabel: "Renewal / year", note: "Everything in Basic + Purchase AI, Shopify, WhatsApp Messaging, Petpooja Loyalty, Tally, AI Try-On, Merchant Website, EDC Payment, Static QR (upcoming), ADSR, AI Theft Detection, WhatsApp Order (upcoming)." },
+      { id: "basic", name: "Basic", def: true, y1: 6000, y3: 10000, renewal: 3500, renewalLabel: "Renewal / year", note: "Billing & POS, Multi-Counter / Multi-User, HO & Warehouse Management, Inventory, Reporting, Accounting features, Mobile B2C app, Weighing scale, AI Try-On (clothing), Unlimited WhatsApp E-Bills via WABA. All core retail needs, no extra add-ons required." },
+      { id: "advance", name: "Advance", badge: "Complete", y1: 12000, y3: 16000, renewal: 5000, renewalLabel: "Renewal / year", note: "Everything in Basic + Purchase AI, Shopify, WhatsApp Messaging, Petpooja Loyalty, Tally, Merchant Website, EDC Payment, Static QR (upcoming), ADSR, AI Theft Detection, WhatsApp Order (upcoming)." },
     ],
   },
   features: fill("invoice", Y),
@@ -250,6 +247,9 @@ const invComps = {
   swipe: invC("Swipe", "Free billing & invoicing", "Small businesses", "Free · paid tiers", { hoWarehouse: N, multiUser: P, loyalty: N, shopify: P }, "https://getswipe.in", false),
   "zoho-invoice": invC("Zoho Invoice", "Free invoicing", "Service businesses", "Free", { hoWarehouse: N, multiUser: P, loyalty: N, shopify: N, edc: N }, "https://www.zoho.com/invoice", false),
   logicerp: invC("Logic ERP", "Manufacturing & retail ERP", "Manufacturing & retail", "Custom pricing", { loyalty: Y, hoWarehouse: Y }, "https://www.logicerp.com"),
+  khatabook: invC("Khatabook", "Digital ledger + billing app", "Small shops & kirana", "Free · Premium ~₹156/mo", { hoWarehouse: N, multiUser: P, loyalty: N, shopify: N, websiteIntg: N, edc: N, tallyIntg: N, barcode: P }, "https://khatabook.com", false),
+  gogst: invC("GoGST Bill", "GST billing + inventory", "Retailers, wholesalers & manufacturers", "Free · Premium from ₹1,499/yr", { hoWarehouse: P, multiUser: Y, loyalty: N, shopify: N, websiteIntg: N, edc: N, tallyIntg: N, barcode: Y }, "https://gogstbill.com", false),
+  alignbooks: invC("AlignBooks", "Cloud accounting & inventory ERP", "MSMEs needing full accounting", "From ₹10,000 / yr (on request)", { hoWarehouse: Y, multiUser: Y, loyalty: P, shopify: P, websiteIntg: P, edc: P, tallyIntg: P, barcode: Y }, "https://www.alignbooks.com"),
 };
 const INV_PLANS = {
   vyapar: [
@@ -283,6 +283,19 @@ const INV_PLANS = {
   hdpos: [{ id: "std", name: "Standard", def: true, price: "Custom pricing", custom: true, note: "Billing software for retail stores." }],
   ginesys: [{ id: "std", name: "Standard", def: true, price: "Custom pricing", custom: true, note: "Enterprise retail ERP & POS." }],
   logicerp: [{ id: "std", name: "Standard", def: true, price: "Custom pricing", custom: true, note: "ERP for manufacturing & retail." }],
+  khatabook: [
+    { id: "free", name: "Free", def: true, price: "Free", note: "Digital ledger + basic GST billing on mobile.", rate: () => 0 },
+    { id: "premium", name: "Premium", price: "≈ ₹156 / mo", note: "Adds invoice customisation, payment reminders and more.", rate: () => 156 },
+  ],
+  gogst: [
+    { id: "free", name: "Free (Lifetime)", def: true, price: "Free", note: "Unlimited GST invoices, basic inventory & reports.", rate: () => 0 },
+    { id: "premium", name: "Premium", price: "From ₹1,499 / yr", note: "Adds staff accounts, expenses, e-way bill, more reports.", rate: () => Math.round(1499 / 12) },
+  ],
+  alignbooks: [
+    { id: "ultima", name: "Ultima", def: true, price: "From ₹10,000 (on request)", custom: true, note: "5 users, 5 branches, 9 modules — accounting, inventory, POS, HR/Payroll." },
+    { id: "erp", name: "ERP", price: "Price on request", custom: true, note: "10 users, 10 branches, adds CRM & custom integrations." },
+    { id: "enterprise", name: "Enterprise", price: "Price on request", custom: true, note: "50 users, 25 branches, full ERP." },
+  ],
 };
 Object.keys(INV_PLANS).forEach((k) => { if (invComps[k]) invComps[k].pricing.plans = INV_PLANS[k]; });
 const INVOICE_INTEGRATIONS = {
@@ -974,14 +987,6 @@ function CompareApp() {
       {/* COMPARISON */}
       {prod && comp && (
         <div key={prodKey + compSlug} className="pc-swap">
-          {prodKey === "invoice" && (
-            <div className="pc-no-print" style={{ ...container, padding: "12px 20px 0", display: "flex", justifyContent: "center" }}>
-              <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: C.card, border: `1px solid ${C.border}`, borderRadius: 999, padding: "6px 8px 6px 14px", boxShadow: "0 4px 16px rgba(16,24,40,.06)" }}>
-                <span style={{ fontSize: 12.5, fontWeight: 700, color: C.muted }}>Invoice plans:</span>
-                {[["before", "Before 1 Oct 2026"], ["after", "From 1 Oct 2026"]].map(([v, l]) => <button key={v} onClick={() => setInvMode(v)} style={{ border: "none", cursor: "pointer", borderRadius: 999, padding: "7px 14px", fontSize: 12.5, fontWeight: 800, background: invMode === v ? C.red : "transparent", color: invMode === v ? "#fff" : C.dark }}>{l}</button>)}
-              </div>
-            </div>
-          )}
           <JumpNav prod={prod} />
           <Block><div id="cmp"><SectionHead kicker="Head to head" title={`Petpooja ${pName} vs ${comp.name}`} sub="Petpooja stays on the left. Everything below updates for your selection." />
             <div className="pc-two" style={{ display: "grid", gridTemplateColumns: "1fr auto 1fr", gap: 16, alignItems: "center" }}>
