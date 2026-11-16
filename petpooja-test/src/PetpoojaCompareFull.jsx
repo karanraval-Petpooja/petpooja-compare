@@ -42,7 +42,7 @@ const GROUPS = {
     { key: "integrations", title: "Integrations", rows: [["swiggy", "Swiggy"], ["zomato", "Zomato"], ["paymentGateway", "Payment Gateway"], ["qrOrdering", "QR Ordering"], ["accounting", "Accounting"]] },
     { key: "reporting", title: "Reporting", rows: [["salesReports", "Sales Reports"], ["outletReports", "Outlet Reports"], ["inventoryReports", "Inventory Reports"], ["staffReports", "Staff Reports"]] },
     { key: "plus", title: "Petpooja Plus (why we win)", rows: [["purchaseByPetpooja", "Purchase by Petpooja (FREE - snap image, auto inventory)"], ["captainApp", "Captain App"], ["kds", "Kitchen Display (KDS)"], ["waiterCall", "Waiter Calling Device"], ["trm", "Table Reservation Manager"], ["digitalDisplay", "Digital Display"], ["myWebsite", "My Website (own ordering)"], ["reconciliation", "Order Reconciliation"], ["virtualWallet", "Virtual Wallet"], ["purchaseManager", "Purchase Manager (price compare)"], ["wabaMarketing", "WABA Marketing & e-Bills"]] },
-    { key: "ownerdash", title: "Owner Dashboard (why we win)", rows: [["riskRadar", "Risk Radar — track bill risk & unverified payments (cash/UPI/card)"], ["staffCostSales", "Staff Cost vs Sales — day-by-day labour cost (requires Attendo)"]] },
+    { key: "ownerdash", title: "Owner Dashboard (why we win)", rows: [["riskRadar", "Risk Radar — track bill risk & unverified payments, cash/UPI/card (requires EDC integration)"], ["staffCostSales", "Staff Cost vs Sales — day-by-day labour cost (requires Attendo)"]] },
   ],
   marketing: [
     { key: "ai", title: "AI Assistant", rows: [["mojoAI", "MOJO AI — ask your business questions (e.g. how many customers retained last month)"]] },
