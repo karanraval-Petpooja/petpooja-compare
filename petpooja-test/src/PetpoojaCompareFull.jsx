@@ -42,6 +42,7 @@ const GROUPS = {
     { key: "integrations", title: "Integrations", rows: [["swiggy", "Swiggy"], ["zomato", "Zomato"], ["paymentGateway", "Payment Gateway"], ["qrOrdering", "QR Ordering"], ["accounting", "Accounting"]] },
     { key: "reporting", title: "Reporting", rows: [["salesReports", "Sales Reports"], ["outletReports", "Outlet Reports"], ["inventoryReports", "Inventory Reports"], ["staffReports", "Staff Reports"]] },
     { key: "plus", title: "Petpooja Plus (why we win)", rows: [["purchaseByPetpooja", "Purchase by Petpooja (FREE - snap image, auto inventory)"], ["captainApp", "Captain App"], ["kds", "Kitchen Display (KDS)"], ["waiterCall", "Waiter Calling Device"], ["trm", "Table Reservation Manager"], ["digitalDisplay", "Digital Display"], ["myWebsite", "My Website (own ordering)"], ["reconciliation", "Order Reconciliation"], ["virtualWallet", "Virtual Wallet"], ["purchaseManager", "Purchase Manager (price compare)"], ["wabaMarketing", "WABA Marketing & e-Bills"]] },
+    { key: "ownerdash", title: "Owner Dashboard (why we win)", rows: [["riskRadar", "Risk Radar — track bill risk & unverified payments (cash/UPI/card)"], ["staffCostSales", "Staff Cost vs Sales — day-by-day labour cost (requires Attendo)"]] },
   ],
   marketing: [
     { key: "ai", title: "AI Assistant", rows: [["mojoAI", "MOJO AI — ask your business questions (e.g. how many customers retained last month)"]] },
@@ -165,7 +166,7 @@ const posPetpooja = {
 const posComp = (name, tagline, headline, over = {}, hw = {}, extra = {}) => ({
   name, tagline,
   pricing: { headline, model: extra.model || "Custom pricing", billing: extra.billing || "Custom", perUnit: extra.perUnit || "Not publicly listed", hardware: extra.hardware || "Available / third-party", setup: extra.setup || "Varies", geo: "—", custom: extra.custom !== false, calc: extra.calc || (() => null) },
-  features: fill("pos", Y, over),
+  features: fill("pos", Y, { riskRadar: N, staffCostSales: N, ...over }),
   hardware: { posTerminal: P, printer: Y, kotPrinter: Y, barcodeScanner: P, cashDrawer: P, customerDisplay: P, kitchenDisplay: P, paymentDevice: P, installation: P, warranty: "Third-party", ...hw },
   advantages: extra.adv || ["Comparable restaurant POS"],
   sources: [{ name: name, url: extra.url || "", date: "Aug 2026" }],
